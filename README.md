@@ -17,7 +17,7 @@ console.log(substract); // 190
 console.log(multiply); // 2000
 console.log(divide); // 20
 ```
-Notice that the result of the sum on line 7 is not 210 but 20010. This happens because the variable `input` is a string, and JavaScript does not really know if what you want to do is:
+Notice that the result of the result of `console.log(sum)` is not 210 but 20010. This happens because the variable `input` is a string, and JavaScript does not really know if what you want to do is:
 1.  Joining the values together (&quot;200&quot;+10 =&quot;20010&quot;), or
 1.  Adding the values (&quot;200&quot;+10=210).
 
