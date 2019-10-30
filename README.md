@@ -24,15 +24,39 @@ Notice that the result of `console.log(sum)` is not 210, but "20010". This happe
 Because of this confusion, String values plus Number values will always result in a string with all the values &quot;glued&quot; together.
 
 #### Solution:
-Choose, from any of the following alternatives, the solution that best fits your expected result:
+You can directly convert the `input` variable into a number, by using any of the following alternatives:
 ```js
 var input = Number(prompt("Enter any number:")); // used for integers and fractional numbers
 var input = +prompt("Enter any number:"); // used for integers and fractional numbers
 var input = parseInt("Enter any number:"); // used for integers only
 var input = parseFloat("Enter any number:"); // used for integers and fractional numbers
 
-var sum   = input+10;
+var sum   = input + 10;
 console.log(sum); // 210
+```
+You can also perform the conversion after the value has been received from `prompt();`.
+- Example 01
+```js
+var input = prompt("Enter any number:");
+input = Number(input);
+input = +input;
+input = parseInt(input);
+input = parseFloat(int);
+
+var sum = input + 10;
+console.log(sum); // 210
+// In this case, the variable input will permanently become a number.
+```
+- Example 02
+```js
+var input = prompt("Enter any number:");
+
+var sum   = Number(input) + 10;
+var sum   = +input + 10;
+var sum   = parseInt(input) + 10;
+var sum   = floatInt(input) + 10;
+console.log(sum); // 210
+// In this case, the variable input will remain a string, it is just converted for the operation.
 ```
 
 ##### Want to know more?
