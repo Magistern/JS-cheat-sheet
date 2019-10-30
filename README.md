@@ -3,7 +3,7 @@ Helpful snippets and summary from the labs.
 
 ## From Lab01
 ### Addition, Substraction, Multiplication, and Division of variables
-- The `prompt();` method always return a string value, thus, for some mathematical operations, this **string value has to be converted to number value**.
+- The **`prompt();`** method always **returns** a **string value**, thus, for some mathematical operations this string value **has to be converted to number value**.
 
 ```js
 var input       = prompt("Enter any number:"); // 200
