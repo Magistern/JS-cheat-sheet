@@ -17,11 +17,11 @@ console.log(substract); // 190
 console.log(multiply); // 2000
 console.log(divide); // 20
 ```
-Notice that the result of the result of `console.log(sum)` is not 210 but 20010. This happens because the variable `input` is a string, and JavaScript does not really know if what you want to do is:
+Notice that the result of the result of `console.log(sum)` is not 210 but "20010". This happens because the variable `input` is a string, and JavaScript does not really know if what you want to do is:
 1.  Joining the values together (&quot;200&quot;+10 =&quot;20010&quot;), or
-1.  Adding the values (&quot;200&quot;+10=210).
+1.  Adding up the values (&quot;200&quot;+10=210).
 
-String values plus number values, will give as a result a string with both values &quot;glued&quot; together.
+Adding String values plus Number values, will result in a string with all the values &quot;glued&quot; together.
 
 #### Solution:
 To fix this issue you can use the solution that fits your code.
