@@ -31,7 +31,7 @@ var input = +prompt("Enter any number:"); // used for integers and fractional nu
 var input = parseInt("Enter any number:"); // used for integers only
 var input = parseFloat("Enter any number:"); // used for integers and fractional numbers
 
-var sum   = input + 10;
+var sum = input + 10;
 console.log(sum); // 210
 ```
 You can also perform the conversion after the value has been received from `prompt();`.
@@ -52,10 +52,10 @@ console.log(sum); // 210
 // In this case, `input` will remain a string, it is just consider a number for this particular operation.
 var input = prompt("Enter any number:");
 
-var sum   = Number(input) + 10;
-var sum   = +input + 10;
-var sum   = parseInt(input) + 10;
-var sum   = floatInt(input) + 10;
+var sum = Number(input) + 10;
+var sum = +input + 10;
+var sum = parseInt(input) + 10;
+var sum = floatInt(input) + 10;
 console.log(sum); // 210
 console.log(typeof input); // string
 ```
