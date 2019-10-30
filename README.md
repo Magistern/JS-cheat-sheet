@@ -24,7 +24,7 @@ Notice that the result of `console.log(sum)` is not 210, but "20010". This happe
 Because of this confusion, String values plus Number values will always result in a string with all the values &quot;glued&quot; together.
 
 #### Solution:
-You can directly convert the `input` variable into a number, by using any of the following alternatives:
+You can directly declare the `input` variable as a number, by using any of the following alternatives:
 ```js
 var input = Number(prompt("Enter any number:")); // used for integers and fractional numbers
 var input = +prompt("Enter any number:"); // used for integers and fractional numbers
@@ -37,6 +37,7 @@ console.log(sum); // 210
 You can also perform the conversion after the value has been received from `prompt();`.
 - Example 01
 ```js
+// Just as above, this technique will permanently set `input` as a number.
 var input = prompt("Enter any number:");
 input = Number(input);
 input = +input;
@@ -45,10 +46,10 @@ input = parseFloat(int);
 
 var sum = input + 10;
 console.log(sum); // 210
-// In this case, the variable input will permanently become a number.
 ```
 - Example 02
 ```js
+// In this case, `input` will remain a string, it is just consider a number for this particular operation.
 var input = prompt("Enter any number:");
 
 var sum   = Number(input) + 10;
@@ -56,8 +57,8 @@ var sum   = +input + 10;
 var sum   = parseInt(input) + 10;
 var sum   = floatInt(input) + 10;
 console.log(sum); // 210
-// In this case, the variable input will remain a string, it is just converted for the operation.
+console.log(typeof input); // string
 ```
 
 ##### Want to know more?
- MDN references: [Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [+](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_%28%29), [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt), [parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat).
+ MDN references: [Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [+](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_%28%29), [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt), [parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat),[typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof).
