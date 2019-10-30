@@ -1,5 +1,5 @@
 # JS Cheat-sheet
-Helpful snippets and summary from the labs.
+Helpful snippets and summaries from the labs.
 
 ## From Lab01
 ### Addition, Substraction, Multiplication, and Division of variables
