@@ -24,7 +24,7 @@ Notice that the result of `console.log(sum)` is not 210, but "20010". This happe
 Because of this confusion, String values plus Number values will always result in a string with all the values &quot;glued&quot; together.
 
 #### Solution:
-To fix this issue, you can use any of the following solutions that fits your code:
+You can chose from any of the following solutions, the one that fits best for your expected result:
 ```js
 var input = Number(prompt("Enter any number:")); // used for integers and fractional numbers
 var input = +prompt("Enter any number:"); // used for integers and fractional numbers
