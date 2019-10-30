@@ -1,11 +1,36 @@
-# JS cheat-sheet
-Helpful snippets for labs
+# JS Cheat-sheet
+Helpful snippets and summary from the labs.
 
-## Lab 1
+## From Lab01
+### Addition, Substraction, Multiplication, and Division of variables
+- The `prompt();` method always return a string value, thus, for some mathematical operations, this **string value has to be converted to number value**.
 
-| Troubleshooting                   | Things to Remember                                           | Comment                                                      |
-| --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `var age = prompt(“Your age is:”);` | `prompt()` always returns a string value, <br />if you need  to make operations <br />(sum, divide, etc.), the value needs to be converted to  number value. | To convert string value to a number, use any of the  following solutions: <br />var age = Number(  prompt(“Your age is:”) );<br />var age = +prompt(“Your  age is:”); <br />var age = parseInt(  prompt(“Your age is:”) );<br />var age = parseFloat(  prompt(“Your age is:”) ); |
+```js
+var input		= prompt("Enter any number:"); // 200
+var sum		  = input+10;
+var substract  = input-10;
+var multiply	= input*10;
+var divide	   = input/10;
 
- MDN reference s: [Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [+](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_()), [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt), [parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat),
+console.log(sum); // "20010"
+console.log(substract); // 190
+console.log(multiply); // 2000
+console.log(divide); // 20
+```
+Notice that the result of the sum on line 7 is not 210 but 20010. This happens because the variable `input` is a string, and JavaScript does not really know if what you want to do is:
+1.  Joining the values together (&quot;200&quot;+10 =&quot;20010&quot;), or
+1.  Adding the values (&quot;200&quot;+10=210).
 
+String values plus number values, will give as a result a string with both values &quot;glued&quot; together.
+
+####Solution:
+To fix this issue you can use the solution that fits your code.
+```js
+var input		= Number(prompt("Enter any number:")); // Any number (1, 1.5)
+var input		= +prompt("Enter any number:"); // Any number (1, 1.5)
+var input		= parseInt("Enter any number:"); // Only for integers (1, 2, 3)
+var input		= parseFloat("Enter any number:"); // For fractional numbers (1.1, 3.75)
+```
+
+##### Want to know more?
+ MDN references: [Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [+](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_(%29), [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt), [parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat).
