@@ -6,16 +6,16 @@ Helpful snippets and summary from the labs.
 - The `prompt();` method always return a string value, thus, for some mathematical operations, this **string value has to be converted to number value**.
 
 ```js
-1. var input       = prompt("Enter any number:"); // 200
-1. var sum         = input+10;
-1. var substract   = input-10;
-1. var multiply    = input*10;
-1. var divide      = input/10;
-1.
-1. console.log(sum); // "20010"
-1. console.log(substract); // 190
-1. console.log(multiply); // 2000
-1. console.log(divide); // 20
+var input       = prompt("Enter any number:"); // 200
+var sum         = input+10;
+var substract   = input-10;
+var multiply    = input*10;
+var divide      = input/10;
+
+console.log(sum); // "20010"
+console.log(substract); // 190
+console.log(multiply); // 2000
+console.log(divide); // 20
 ```
 Notice that the result of the sum on line 7 is not 210 but 20010. This happens because the variable `input` is a string, and JavaScript does not really know if what you want to do is:
 1.  Joining the values together (&quot;200&quot;+10 =&quot;20010&quot;), or
