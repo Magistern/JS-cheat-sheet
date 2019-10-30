@@ -1,5 +1,5 @@
 # JS Cheat-sheet
-Helpful snippets and summary from the labs.
+Helpful snippets and common solutions to issues found out during the lab sessions.
 
 ## From Lab01
 ### Addition, Substraction, Multiplication, and Division of variables
@@ -60,5 +60,5 @@ console.log(sum); // 210
 console.log(typeof input); // string
 ```
 
-##### Want to know more?
+#### Want to know more?
  MDN references: [prompt()](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt), [Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [+](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_%28%29), [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt), [parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat), [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof).
