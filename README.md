@@ -23,7 +23,7 @@ Notice that the result of the sum on line 7 is not 210 but 20010. This happens b
 
 String values plus number values, will give as a result a string with both values &quot;glued&quot; together.
 
-####Solution:
+#### Solution:
 To fix this issue you can use the solution that fits your code.
 ```js
 var input		= Number(prompt("Enter any number:")); // Any number (1, 1.5)
