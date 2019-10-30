@@ -26,10 +26,10 @@ String values plus number values, will give as a result a string with both value
 #### Solution:
 To fix this issue you can use the solution that fits your code.
 ```js
-var input		= Number(prompt("Enter any number:")); // Any number (1, 1.5)
-var input		= +prompt("Enter any number:"); // Any number (1, 1.5)
-var input		= parseInt("Enter any number:"); // Only for integers (1, 2, 3)
-var input		= parseFloat("Enter any number:"); // For fractional numbers (1.1, 3.75)
+var input = Number(prompt("Enter any number:")); // Any number (1, 1.5)
+var input = +prompt("Enter any number:"); // Any number (1, 1.5)
+var input = parseInt("Enter any number:"); // Only for integers (1, 2, 3)
+var input = parseFloat("Enter any number:"); // For fractional numbers (1.1, 3.75)
 ```
 
 ##### Want to know more?
