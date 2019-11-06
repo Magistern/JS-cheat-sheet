@@ -1,0 +1,13 @@
+# JS Cheat-sheet
+Helpful snippets and common solutions to issues found out during the lab sessions.
+
+## Ternary Operator
+The conditional (ternary) operator is the only JavaScript operator that takes three operands:
+1. A condition followed by a question mark (?), then
+2. an expression to execute if the condition is truthy followed by a colon (:), and finally
+3. the expression to execute if the condition is falsy. This operator is frequently used as a shortcut for the if statement.
+
+```js
+// Syntax
+condition ? true : false;
+```
