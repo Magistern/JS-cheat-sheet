@@ -8,10 +8,10 @@ The conditional (ternary) operator is the only JavaScript operator that takes th
 3. the expression to execute if the condition is falsy. This operator is frequently used as a shortcut for the if statement.
 ### Syntax
 ```js
-//  1        2       3
+//   1         2       3
 (condition) ? true : false;
 ```
-## Use
+### Use
 This operator is frequently used as a shortcut for the if statement.
 ```js
 // Example
@@ -32,3 +32,6 @@ console.log(msg); // Yes, I am #50
 msg = (multiply == 50) ? "Yes, I am #50" : "No, I am not #50";
 console.log(msg); // Yes, I am #50
 ```
+
+### References
+ MDN references: [Conditional (Ternary Operator)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
