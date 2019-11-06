@@ -14,7 +14,7 @@ The conditional (ternary) operator is the only JavaScript operator that takes th
 ### Use
 This operator is frequently used as a shortcut for the if statement.
 ```js
-// Example: assign a value to «msg», according to the condition
+// Example: print a «msg», if the result of the multiplication is the number 50.
 var a = 10;
 var b = 5;
 var multiply = a*b;
