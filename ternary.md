@@ -18,18 +18,17 @@ This operator is frequently used as a shortcut for the if statement.
 var a = 10;
 var b = 5;
 var multiply = a*b;
-var commonIf;
-var ternary;
+var msg;
 
 // Common if statement
 if(multiply == 50) {
-    commonIf = "Yes, I am #50";
+    msg = "Yes, I am #50";
 } else {
-    commonIf = "No, I am not #50";
+    msg = "No, I am not #50";
 }
-console.log(commonIf); // Yes, I am #50
+console.log(msg); // Yes, I am #50
 
 // Ternary Operator
-ternary = (multiply == 50) ? "Yes, I am #50" : "No, I am not #50";
-console.log(ternary); // Yes, I am #50
+msg = (multiply == 50) ? "Yes, I am #50" : "No, I am not #50";
+console.log(msg); // Yes, I am #50
 ```
