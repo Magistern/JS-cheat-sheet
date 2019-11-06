@@ -14,13 +14,13 @@ The conditional (ternary) operator is the only JavaScript operator that takes th
 ### Use
 This operator is frequently used as a shortcut for the if statement.
 ```js
-// Example
+// Example: assign a value to «msg», according to the condition
 var a = 10;
 var b = 5;
 var multiply = a*b;
 var msg;
 
-// Common if statement
+// With a common if statement
 if(multiply == 50) {
     msg = "Yes, I am #50";
 } else {
@@ -28,10 +28,10 @@ if(multiply == 50) {
 }
 console.log(msg); // Yes, I am #50
 
-// Ternary Operator
+// Using Ternary Operators
 msg = (multiply == 50) ? "Yes, I am #50" : "No, I am not #50";
 console.log(msg); // Yes, I am #50
 ```
 
 ### References
- MDN references: [Conditional (Ternary Operator)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+ MDN references: [Conditional (Ternary Operator)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator).
